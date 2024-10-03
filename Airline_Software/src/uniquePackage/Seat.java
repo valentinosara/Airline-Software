@@ -14,4 +14,11 @@ public class Seat {
 	public void reserve() {
 		state = State.OCUPATE;
 	}
+
+	@Override
+	public String toString() {
+		return "Seat [state=" + state + "]";
+	}
+	
+	
 }

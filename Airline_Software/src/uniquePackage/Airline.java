@@ -8,6 +8,7 @@ public class Airline {
 	
 	public Airline(Plane plane) {
 		this.plane = plane;
+		this.reservations = new ArrayList<Reservation>();
 	}
 
 	public void assign() {
@@ -17,7 +18,7 @@ public class Airline {
 	}
 	
 	public int freeWindowSeats() {
-		return 9;
+		return plane.freeWindowSeats();
 	}
 	
 	public void addReservation(Reservation r) {
