@@ -11,7 +11,9 @@ public class Airline {
 	}
 
 	public void assign() {
-		
+		for (Reservation r : reservations) {
+			plane.reserveSeat(r.getSeatNumber());
+		}
 	}
 	
 	public int freeWindowSeats() {

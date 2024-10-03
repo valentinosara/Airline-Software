@@ -10,4 +10,8 @@ public class Seat {
 	public boolean isFree() {
 		return state.equals(State.FREE);
 	}
+	
+	public void reserve() {
+		state = State.OCUPATE;
+	}
 }
